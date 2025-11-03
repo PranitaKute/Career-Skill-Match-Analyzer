@@ -241,7 +241,7 @@ else:
 st.markdown("---")
 st.subheader("Step 4 : AI-Powered Career Insights")
 
-if not df_scores.empty:
+if 'df_scores' in locals() and not df_scores.empty:
     top_domain = df_scores.iloc[0]['Career Domain']
     top_score = df_scores.iloc[0]['Match Percentage']
 
